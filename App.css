@@ -1,0 +1,375 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  
+}
+@keyframes example {
+  0%   {background-color:rgb(224, 168, 168); left:0px; top:0px;}
+  25%  {background-color:rgb(153, 153, 108); left:600px; top:0px;}
+  50%  {background-color:rgb(179, 179, 219); left:600px; top:200px;}
+  75%  {background-color:rgb(179, 197, 179); left:0px; top:200px;}
+  100% {background-color:rgb(165, 121, 153); left:0px; top:0px; }
+}
+@keyframes mohan {
+  0%   {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+  25%  {background-color:rgb(116, 116, 116); left:600px; top:0px;}
+  50%  {background-color:rgb(200, 200, 225); left:600px; top:200px;}
+  75%  {background-color:rgb(201, 209, 201); left:0px; top:200px;}
+  100% {background-color:rgb(178, 160, 173); left:0px; top:0px; }
+}
+
+
+.main {
+  width: 100%; 
+  height: auto;
+  background-color: #9db5ae;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;
+}
+
+.header {
+  width: 100%;
+  background-color: #2e7891;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 33%;
+  
+}
+#time{
+  color: #063939;
+}
+
+.menues {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  background-color: #ffffff;
+  animation-name: mohan;
+  animation-duration: 4s;
+  animation-direction: reverse;
+}
+
+.lastli {
+  border: none;
+}
+
+ul li {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #f9dada;
+  border-right: 1px solid rgb(207, 48, 48);
+  list-style: none;
+  padding: 10px 10px;
+  float: left;
+}
+
+.searchbar {
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34%;
+  background-color: #d2d2ca76;
+
+}
+
+input {
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  width: 90%;
+}
+
+button {
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+  width: 10%;
+  border: none;
+  outline: none;
+  background-color: #656c41;
+  color: rgb(212, 139, 42);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.ico {
+  display: none;
+}
+
+h1 {
+  font-size: 25px;
+  color: #c4824b;
+}
+
+.content {
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 70%;
+  background-color: #d2d2d2;
+  border: 1px solid rgb(121, 60, 60);
+  border-radius: 30px;
+}
+
+.icon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.weatherMood {
+  font-size: 150px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.tempmood {
+  padding: 20px 0px 20px 20px;
+  /* justify-content: center; */
+  align-items: center;
+  width: 70%;
+  background-color: rgb(144, 192, 186);
+  display: flex;
+  flex-direction: row;
+}
+
+.mood {
+  padding-left: 30px;
+}
+
+.tempdeg {
+  font-size: 60px;
+  color: rgb(90, 67, 43);
+}
+
+.mood1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(88, 60, 60);
+  font-size: 50px;
+}
+
+.city {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(169, 84, 84);
+  text-transform: capitalize;
+  padding: 0px 20px;
+  font-size: 30px;
+}
+
+.datetime {
+  padding: 20px 0px 20px 0px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #a8e1d3;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.fourblocks {
+  background-color: #dce7e8;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.block1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  width: 25%;
+}
+
+.block4 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.logo {
+  color: #186e6e;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.information {
+  letter-spacing: 1px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.footer {
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #797592;
+}
+
+@media (max-width:200px) {
+
+  ul li {
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+
+  input {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width:780px) {
+  .menues {
+
+    display: none;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .searchbar {
+    width: 70%;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  .ico {
+    display: flex;
+    font-size: 30px;
+    margin-top: 5px;
+    padding-right: 20px;
+  }
+
+  .ico:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width:700px) {
+  .icon2 {
+
+    padding: 20px;
+  }
+
+  .weatherMood {
+    font-size: 100px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .tempmood {
+    padding: 10px 0px 10px 0px;
+    width: 70%;
+  }
+
+  .mood {
+    padding-left: 10px;
+  }
+
+  .tempdeg {
+    font-size: 40px;
+  }
+
+  .mood1 {
+    font-size: 40px;
+  }
+
+  .city {
+    padding: 0px 10px;
+    font-size: 30px;
+  }
+
+  .datetime {
+    padding: 10px 0px 10px 0px;
+    width: 30%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .fourblocks {
+    background-color: #aab5b2;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .block1 {
+    padding: 5px;
+  }
+
+  .block4 {
+    padding: 5px;
+  }
+
+  .logo {
+    color: #564242;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .information {
+    font-size: 15px;
+  }
+
+
+}
